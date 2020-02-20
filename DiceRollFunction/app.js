@@ -3,11 +3,8 @@ function rollDie(){
 	console.log(`Rolled: ${roll}`);
 }
 
-function throwDice(){
-	rollDie();
-	rollDie();
-	rollDie();
-	rollDie();
-	rollDie();
-	rollDie();
+function throwDice(numRolls){
+	for(let i = 0; i < numRolls; i++) {
+		rollDie();
+	}
 }
